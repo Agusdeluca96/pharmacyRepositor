@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+.nav-wrapper {
+    background-color: #ffffff !important;
+}
+
+.nav-wrapper li{
+    color: grey !important;
+    margin-right: 3%;
+}
+
+#logoBap {
+    margin-left: 3%;
+    width: 28%;
+}
+
+#dropdown{
+    background: grey;
+    margin-top: 5%;
+}
+
+.usuario{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.draggable {
+    cursor: move; /* fallback: no `url()` support or images disabled */
+    cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+    cursor: -moz-grab; /* Firefox 1.5-26 */
+    cursor: grab;
+}
+
+#leftSection {
+    border-right:2px solid #000;
+    height:800px;
+}
+
+/* CSS de la caja para MAC 15" */
+#cajaCompra {
+    margin-left: 16%;
+    margin-top: 38.75%;
+}
+
+/* CSS de la caja para Dell 17" */
+/* #cajaCompra {
+    margin-left: 20%;
+    margin-top: 35.5%;
+} */
+
+#listadoProductos {
+    margin-left: 5%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../images/background.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bordes{
+    box-shadow: 0px 0px 20px green;
+}

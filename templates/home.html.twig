@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'modalCompra.html.twig' %}
+    {% include 'modalMedicamentos.html.twig' %}
+
+    <div class="row">
+        <div class="col s10 bg" id="leftSection">
+            <div id="cajaCompra"  sistema="Audiencias">
+                <img id="imgCaja" class="droppable animated" sistema="Audiencias" src="images/caja.jpg" alt="Caja de compra">
+            </div>
+        </div>
+
+        <div class="col s2" id="rightSection">
+            <div class="row" id="listadoProductos">
+                <h5>Listado de Productos</h5>
+            </div>
+            {% for medicamento in medicamentos %}
+            <div class="row draggable" id="{{medicamento.getId}}" nombre="{{medicamento.getNombre}}" prospecto="{{medicamento.getProspecto}}" precio="{{medicamento.getPrecio}}">
+                <img class="usuario" src="{{medicamento.getFoto}}" alt="{{medicamento.getNombre}}" draggable="false">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

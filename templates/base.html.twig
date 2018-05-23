@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Pharmacy Repositor</title>
+        {% block stylesheets %}
+            <!-- Estilos -->
+            <link href="css/style.css" rel="stylesheet">
+            <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+            <link type="text/css" rel="stylesheet" href="css/animate.css"  media="screen,projection"/>
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+            {% include 'header.html.twig' %}
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}
+            <!-- Scripts -->
+            <script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script type="text/javascript" src="js/draggable.js"></script>
+            <script type="text/javascript" src="js/droppable.js"></script>
+            <script type="text/javascript" src="js/initializemodal.js"></script>
+            <script type="text/javascript" src="js/scripts.js"></script>
+        {% endblock %}
+    </body>
+</html>
